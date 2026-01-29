@@ -95,6 +95,13 @@ Ni hittar alla tasks i filen:
 
 Gör klart **5a innan ni går vidare till 5b**, osv.
 
+Efter varje pull request så raderar ni den genomförda `feature`-branchen, både på Github och lokalt.
+För att radera en lokal branch måste du först hoppa över till en annan branch, förslagsvis `dev`. Skriv därefter:
+
+```bash
+git branch -D <namn-på er-branch>
+```
+
 ---
 
 ### 5a – Feature‑brancher utan konflikter
@@ -103,7 +110,7 @@ Gör klart **5a innan ni går vidare till 5b**, osv.
 2. Skapa en feature‑branch lokalt:
 
    ```bash
-   git branch <nmn-på-er-branch>
+   git branch <namn-på-er-branch>
    git checkout <namn-på-er-branch>
    ```
 3. Lägg in koden för er task.
