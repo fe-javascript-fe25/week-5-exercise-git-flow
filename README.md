@@ -87,11 +87,7 @@ För att undvika att pull requests av misstag skapas mot `main` kan ni ändra de
 
 ## Steg 5 – Arbeta med tasks
 
-Ni hittar alla tasks i filen:
-
-```text
-./tasks.md
-```
+Ni hittar alla tasks i filen [tasks.md](./tasks.md).
 
 Gör klart **5a innan ni går vidare till 5b**, osv.
 
