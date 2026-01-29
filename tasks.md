@@ -1,8 +1,73 @@
 # Tasks
 
 ## 01-createHTML
-Skapa en HTML-fil och länka in filerna style.css och app.js i din Head. Namnge sidan Swapi och länka även in följande i din Head.
-```<script src="https://kit.fontawesome.com/f300007e95.js" crossorigin="anonymous"></script>```
+Skapa en HTML-fil och klistra in nedanstående kod. Skapa även mappen ```resources``` och lägg in bilden *header-background.png* som du hittar i repot.
+
+```
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/f300007e95.js"
+            crossorigin="anonymous"
+        ></script>
+        <script type="module" src="./app.js"></script>
+        <link rel="stylesheet" href="./style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="page-header">
+            <div class="page-header__title">Star Wars Catalog</div>
+        </header>
+        <main class="main-section">
+            <div class="main-section__wrapper">
+                <section class="main-section__box characters">
+                    <h2 class="characters__header">Characters</h2>
+                    <ul class="characters__list" id="charactersList"></ul>
+                    <div class="pagination-container">
+                        <i
+                            class="fa-solid fa-chevron-left pagination-btn"
+                            id="prevPageBtn"
+                        ></i>
+                        <p class="page-indicator" id="pageIndicator">Sida 1</p>
+                        <i
+                            class="fa-solid fa-chevron-right pagination-btn"
+                            id="nextPageBtn"
+                        ></i>
+                    </div>
+                </section>
+                <section class="main-section__box details">
+                    <h2 class="details__header">Details</h2>
+                    <section class="person-info">
+                        <h3 class="person-info__name" id="personName"></h3>
+                        <ul class="person-info__list" id="personInfoList"></ul>
+                    </section>
+                    <section class="home-info">
+                        <h3 class="home-info__name" id="homeName"></h3>
+                        <ul class="home-info__list" id="homeInfoList"></ul>
+                    </section>
+                </section>
+            </div>
+        </main>
+        <section class="search-section">
+            <div class="content-wrapper">
+                <form class="search-section__form">
+                    <input
+                        id="searchInput"
+                        type="text"
+                        class="search-section__input"
+                    />
+                    <ul class="autocomplete-list" id="autocompleteList"></ul>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
+
+```
+
 
 ## 02-createScript
 Skapa en JS fil med namnet app.js. Stagea och committa. Lägg därefter in följande kod längst upp i filen
